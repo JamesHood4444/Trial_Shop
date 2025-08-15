@@ -179,6 +179,7 @@ public class Manage_Cards extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         btnSaveCard = new javax.swing.JButton();
         btnRemoveCard = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -200,6 +201,8 @@ public class Manage_Cards extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setText("BRAND NEW");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -214,13 +217,16 @@ public class Manage_Cards extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
                             .addComponent(txtNewCard, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnSaveCard))))
-                .addContainerGap(48, Short.MAX_VALUE))
+                            .addComponent(btnSaveCard)))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -288,6 +294,7 @@ public class Manage_Cards extends javax.swing.JFrame {
     private javax.swing.JButton btnRemoveCard;
     private javax.swing.JButton btnSaveCard;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> lstCards;
     private javax.swing.JTextField txtNewCard;
